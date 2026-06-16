@@ -80,7 +80,7 @@ article{padding:1rem;border:1px solid rgba(0,0,0,0.04);border-radius:6px}
 
 /* Contact form */
 aside{padding:2rem 0}
-form{display:grid;gap:.5rem;max-width:40ch}
+form{display:grid;gap:.5rem;width:100%;max-width:30rem}
 label{font-size:.95rem}
 input[type="text"],input[type="email"],textarea{padding:.5rem;border:1px solid rgba(0,0,0,0.08);border-radius:4px}
 .checkbox{display:flex;align-items:center;gap:.5rem}
@@ -92,10 +92,16 @@ footer{padding:2rem 1rem;border-top:1px solid rgba(0,0,0,0.06);text-align:center
 /* Accessibility helpers */
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
+#bootcamps article {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Responsive tweaks */
 @media (max-width:600px){
   nav{padding:.75rem}
   #hero{padding:2rem 0; background: none;}
+  #bootcamps article{display: flex;flex-direction:column;align-items:center;text-align:center}
 }
 
 .scroll-wrapper {
@@ -111,3 +117,5 @@ footer{padding:2rem 1rem;border-top:1px solid rgba(0,0,0,0.06);text-align:center
     transform: translateX(-50%); 
   }
 }
+
+
