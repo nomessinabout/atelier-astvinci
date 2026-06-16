@@ -25,15 +25,26 @@
   </header>
 
   <main>
+
     <section id="hero" aria-labelledby="hero-heading">
       <h1 id="hero-heading"><span class="serif">Atelier ASTvinci</span> — Bridging the Gap Between Science and Art</h1>
-      <p class="lead">We shape scientific data into immersive experiences for museums, research partners, and public audiences.</p>
+      <p class="lead">We are an Atelier for co-creation and cross contamination of scientific, technologic and artistic knowledge. We believe these to be key ingredients for an innovative and sustainable future society.</p>
       <p class="actions"><a class="button" href="#contact">Contact / Newsletter</a></p>
     </section>
 
     <section id="about" aria-labelledby="about-heading">
       <h2 id="about-heading">About &amp; Mission</h2>
       <p>Supported by the EXIST seed grant, Atelier ASTvinci develops sonification technologies and collaborates with museums to make scientific phenomena perceptible through art and sound.</p>
+    </section>
+
+    <section id="partners" aria-labelledby="partners-heading">
+      <h2 id="partners-heading">Partners</h2>
+      <div class="partner-logos" role="list">
+        <img src="./public/partners/exist.png" alt="EXIST">
+        <img src="./public/partners/awi.png" alt="AWI">
+        <img src="./public/partners/dkrz.svg" alt="DKRZ">
+        <img src="./public/partners/bremen.png" alt="University of Bremen">
+      </div>
     </section>
 
     <section id="team" aria-labelledby="team-heading">
@@ -43,14 +54,14 @@
           <article aria-labelledby="nadja-name">
             <h3 id="nadja-name">Nadja</h3>
             <p class="role">Co-founder · Artistic Director</p>
-            <p>Concept, curatorial collaborations, and artistic direction across sonification projects.</p>
+            <p>Concept, curatorial collaborations, and artistic direction across projects.</p>
           </article>
         </li>
         <li>
           <article aria-labelledby="anna-name">
             <h3 id="anna-name">Anna</h3>
-            <p class="role">Co-founder · Artistic Director</p>
-            <p>Concept, curatorial collaborations, and artistic direction across sonification projects.</p>
+            <p class="role">Co-founder · Project Manager</p>
+            <p>Project manager and concept developer in art and science, climate scientist and SciArt expert.</p>
           </article>
         </li>
         <li>
@@ -65,19 +76,19 @@
 
     <section id="bootcamps" aria-labelledby="bootcamps-heading">
       <h2 id="bootcamps-heading">Bootcamps &amp; Workshops</h2>
-      <p>Hands-on workshops and bootcamps in sonification, data-driven art, and museum practice for researchers and creatives. Tailored curricula and short residencies available.</p>
+      <p>Not sure what SciArt is or how you can engage and relate to it? Come and try it yourself in our SciArt bootcamp, one day of exchange, changing perspectives, co-creation between scientists, engineers and artists. With workshops, hands on experiences, significations, data driven art.</p>
     </section>
 
     <aside id="contact" aria-labelledby="contact-heading">
       <h2 id="contact-heading">Contact &amp; Newsletter</h2>
-      <form id="contact-form" action="#" method="post" novalidate aria-describedby="contact-desc">
+      <form id="contact-form" action="#" method="get" novalidate aria-describedby="contact-desc">
         <p id="contact-desc" class="visually-hidden">Use this form to contact us or subscribe to the newsletter. Required fields marked with *.</p>
 
         <label for="name">Name *</label>
-        <input id="name" name="name" type="text" required aria-required="true">
+        <input id="name" name="name" type="text" required aria-required="true" autocomplete="name">
 
         <label for="email">Email *</label>
-        <input id="email" name="email" type="email" required aria-required="true">
+        <input id="email" name="email" type="email" required aria-required="true" autocomplete="email">
 
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="4"></textarea>
@@ -95,9 +106,7 @@
   <footer>
     <p>&copy; Atelier ASTvinci — EXIST seed grant supported</p>
     <nav aria-label="Footer navigation">
-      <ul>
-        <li><a href="#privacy">Privacy</a></li>
-      </ul>
+      <a href="#privacy">Privacy</a></li>
     </nav>
   </footer>
 

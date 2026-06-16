@@ -30,8 +30,22 @@ nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;paddi
 .nav-list a{text-decoration:none;color:inherit;font-weight:600}
 
 /* Hero */
-#hero{padding:4rem 0 2rem}
-#hero h1{font-size:clamp(1.6rem,4vw,3rem);margin:0 0 .5rem;line-height:1.05}
+#hero{padding:4rem 0 2rem;
+/* Set the image path */
+  background-image: url('./public/logo.png');
+  
+  /* Align to the right and vertically center (or top) */
+  background-position: right center;
+  
+  /* Ensure the image covers the full height */
+  background-size: auto 100%;
+  
+  /* Prevent the image from repeating */
+  background-repeat: no-repeat;
+  
+  /* Optional: Ensure the container has height */
+  min-height: 300px;}
+#hero h1{font-size:clamp(1.6rem,4vw,3rem);margin:0 0 .5rem;line-height:1.05; text-shadow: 1px 1px white;}
 .lead{max-width:var(--measure);font-size:1.05rem;margin:0 0 1.25rem}
 .actions .button{display:inline-block}
 
@@ -50,6 +64,13 @@ h2{font-family:'Merriweather', serif;font-weight:700;margin:0 0 .75rem}
 article{padding:1rem;border:1px solid rgba(0,0,0,0.04);border-radius:6px}
 .role{font-weight:600;margin:.25rem 0 .5rem}
 
+/* Partner logos */
+.partner-logos{display:flex;align-items:center;gap:2rem;overflow-x:auto;padding:1rem 0;&::-webkit-scrollbar {display: none;}
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */}
+.partner-logos img{height:6rem;}
+
 /* Contact form */
 aside{padding:2rem 0}
 form{display:grid;gap:.5rem;max-width:40ch}
@@ -67,5 +88,19 @@ footer{padding:2rem 1rem;border-top:1px solid rgba(0,0,0,0.06);text-align:center
 /* Responsive tweaks */
 @media (max-width:600px){
   nav{padding:.75rem}
-  #hero{padding:2rem 0}
+  #hero{padding:2rem 0; background: none;}
+}
+
+.scroll-wrapper {
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* Adjust this value based on your content width */
+    transform: translateX(-50%); 
+  }
 }

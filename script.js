@@ -33,11 +33,12 @@ function handleFormSubmit(event){
   alert('Thank you — message queued.');
 }
 
-/* Exported hooks (for future modules) */
+/* Exported hooks (for future modules)
 export function initializeThree(){
   // Intentionally empty: import Three.js and bootstrap scene here.
-}
+} */
 
+/*
 export function initializeAudio(){
   // Intentionally empty: import Tone.js or WebAudio API setup here.
-}
+} */
